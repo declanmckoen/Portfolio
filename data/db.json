@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "name": "Minesweeper",
+      "id": 1
+    },
+    {
+      "name": "NextGen Scholars",
+      "id": 2
+    }
+  ]
+}
