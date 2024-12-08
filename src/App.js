@@ -1,23 +1,20 @@
-import './App.css';
+import Navbar from "./subcomponents/Navbar";
+import Projects from "./subcomponents/Projects";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <Router>
+      <div className="App">
+        <Navbar />
+        <div className="content">
+          <Routes>
 
-        <p>
-          Hello World?
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+          </Routes>
+        </div>
+        
+      </div>
+    </Router>
   );
 }
 
