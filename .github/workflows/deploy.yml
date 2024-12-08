@@ -1,9 +1,9 @@
-name: Deploy React App to GitHub Pages
+name: Deploy React App to Main Branch
 
 on:
   push:
     branches:
-      - main  # Trigger the action on pushes to the main branch
+      - main
 
 jobs:
   build-and-deploy:
@@ -18,19 +18,27 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18  # Use the version of Node.js that your app needs
+          node-version: 18
 
       # Step 3: Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Build the React app
-      - name: Build the project
+      # Step 4: Build the project
+      - name: Build the React App
         run: npm run build
 
-      # Step 5: Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build  # Path to the build folder
+      # Step 5: Deploy files to the main branch
+      - name: Deploy to Main Branch
+        run: |
+          # Remove all files except the build directory
+          find . -not -name 'build' -not -name '.' -not -name '..' -exec rm -rf {} +
+          # Move build files to the root of the repo
+          mv build/* .
+          # Set up Git
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          # Commit and push changes
+          git add .
+          git commit -m "Deploy React App"
+          git push origin main --force
