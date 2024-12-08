@@ -1,3 +1,4 @@
+import Education from "./subcomponents/Education";
 import Navbar from "./subcomponents/Navbar";
 import Projects from "./subcomponents/Projects";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -9,7 +10,8 @@ function App() {
         <Navbar />
         <div className="content">
           <Routes>
-
+            <Route path="/portfolio" element={ <Projects /> } />
+            <Route path="/portfolio/education" element={ <Education /> } />
           </Routes>
         </div>
         

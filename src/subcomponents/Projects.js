@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
 import useFetch from "../hooks/useFetch";
 
 const Projects = () => {
-  const { data: projects, error } = useFetch("http://localhost:8000/projects");
+  const { data, error } = useFetch("/portfolio/data/db.json");
+
+  const projects = data?.projects;
   
   return (
     <div className="projects">
