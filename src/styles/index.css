@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Lato", "Arial";
+  text-decoration: none;
+  color: #333;
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Spread items evenly */
+  align-items: center; /* Align items vertically */
+  padding: 1rem 2rem; /* Add padding for better spacing */
+  background-color: #ffffff; /* White background for a clean look */
+  border-bottom: 1px solid #ddd; /* Subtle bottom border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
+  position: sticky; /* Make navbar stick to the top */
+  top: 0;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  text-decoration: none; /* Remove underlines */
+  color: #333; /* Use a neutral color for text */
+  font-size: 1rem; /* Ensure readability */
+  font-weight: 500; /* Slightly bold text */
+  margin: 0 1rem; /* Add spacing between links */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+.navbar a:hover {
+  color: #007BFF; /* Add a hover color (blue in this case) */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Highlight the active link */
+.navbar a.active {
+  color: #007BFF; /* Match hover color */
+  font-weight: 600; /* Make it stand out */
+  border-bottom: 2px solid #007BFF; /* Underline for active link */
+}
+
+/* Navbar heading */
+.navbar h1 {
+  font-size: 1.5rem; /* Slightly larger heading */
+  color: #333; /* Neutral text color */
+  margin: 0; /* Reset margin */
+  font-weight: bold; /* Make it stand out */
+  letter-spacing: 1px; /* Improve readability */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align to the left */
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .navbar a {
+    margin: 0.5rem 0; /* Adjust link spacing */
+  }
+}
+/* ------------------------------------------------------------------------------------------ */
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* Project list styles */
+/* General wrapper for the entire section */
+.projects-wrapper {
+  padding: 2rem;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+
+/* Header Styling */
+.projects-wrapper h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Project Grid Styles */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem; /* Uniform spacing between project previews */
+  margin: 1rem auto;
+  max-width: 1200px;
+}
+
+/* Set the entire Link to stretch */
+.project-preview-link {
+  display: block; /* Makes the Link behave like a block */
+  flex: 0 1 calc(25% - 2rem); 
+  max-width: calc(25% - 2rem);
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 2rem;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect for the Link */
+.project-preview-link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/* Handle smaller tablets - 3 column layout */
+@media (max-width: 1024px) {
+  .project-preview-link {
+    flex: 0 1 calc(33.333% - 2rem);
+    max-width: calc(33.333% - 2rem);
+  }
+}
+
+/* Handle mobile - Stack all projects vertically */
+@media (max-width: 768px) {
+  .project-preview-link {
+    flex: 0 1 100%;
+    max-width: 100%;
+  }
+}
+/* ------------------------------------------------------------------------------------------ */
+
+
+

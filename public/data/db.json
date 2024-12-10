@@ -1,12 +1,94 @@
 {
   "projects": [
     {
-      "name": "Minesweeper",
-      "id": 1
+      "name": "NextGen Scholars",
+      "skills": [
+        "HTML",
+        "CSS",
+        "EJS",
+        "Mongodb",
+        "Node.js",
+        "ExpressJS",
+        "Mongoose"
+      ],
+      "about": "NextGen Scholars is a website designed to help middle and high school students with access to college resources. The website allows the student to create their personalized profile and offers various activities within a four-year plan designed with the student in mind. Additionally, the student can use the site purely as an informational database about college prep, leveraging our numerous subpages located in the footer. As an added bonus for parents and educators, an educator profile is offered to allow adults to view their students' profiles.",
+      "github": "https://github.com/declanmckoen/NextGen-Scholars",
+      "id": "nextgen-scholars"
     },
     {
-      "name": "NextGen Scholars",
-      "id": 2
+      "name": "Board Buddy",
+      "skills": [
+        "C++",
+        "Regex"
+      ],
+      "about": "Board Buddy is an ambitious project designed to provide chess players with an avenue to improvement without the need for a credit card. Users can enter in their chess game using algebraic chess notation, and our algorithm will generate a list of games that are most similar to the inputted game based on a calculated similarity score. Users can then view the most similar games and learn from the mistakes of others.",
+      "github": "https://github.com/declanmckoen/BoardBuddy",
+      "id": "board-buddy"
+    },
+    {
+      "name": "Minesweeper",
+      "skills": [
+        "C++",
+        "SFML"
+      ],
+      "about": "Minesweeper was one of my preliminary experiences working on a graphical user interface (GUI). I was able to replicate a childhood favorite of mine using the Simple Fast Multimedia Library (SFML) and object-oriented programming techniques.",
+      "github": "https://github.com/declanmckoen/Minesweeper-Project",
+      "id": "minesweeper"
+    },
+    {
+      "name": "Sudoku",
+      "skills": [
+        "Python",
+        "PyGame"
+      ],
+      "about": "Sudoku was my first introduction to a GUI. It taught me the basics of error handling, object-oriented programming, and user experience design.",
+      "github": "https://github.com/declanmckoen/Sudoku",
+      "id": "sudoku"
+    },
+    {
+      "name": "Portfolio",
+      "skills": [
+        "HTML",
+        "CSS",
+        "React"
+      ],
+      "about": "I decided to build my own portfolio website (the one you're in right now) from scratch using HTML, CSS, JavaScript, and React. Just prior to this project, I had little to no experience with frontend development at all. I spent long nights grinding through YouTube tutorials and online courses until I finally felt prepared enough to tackle this undertaking. Realistically, though, I still need a lot of improvement and am always looking for ways to enhance my abilities.",
+      "github": "https://github.com/declanmckoen/Sudoku",
+      "id": "portfolio"
     }
-  ]
+  ],
+
+  "skills": {
+    "frontend": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "EJS"
+    ],
+    "backend": [
+      "Python",
+      "C++",
+      "C",
+      "Java",
+      "MATLAB",
+      "ARM Assembly",
+      "Mongodb"
+    ],
+    "developerTools": [
+      "Amazon Web Services (AWS)",
+      "Agile Scrum Development",
+      "Atlassian Jira",
+      "JUnit 5 Testing Framework",
+      "Catch2 Testing Framework"
+    ],
+    "libraries": [
+      "PyGame",
+      "SFML",
+      "Regex",
+      "Pandas",
+      "Numpy",
+      "Sci-kit Learn"
+    ]
+  }
 }
