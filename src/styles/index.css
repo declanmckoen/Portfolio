@@ -68,6 +68,7 @@
 /* ------------------------------------------------------------------------------------------ */
 
 
+
 /* ------------------------------------------------------------------------------------------ */
 /* Project list styles */
 /* General wrapper for the entire section */
@@ -138,3 +139,66 @@
 
 
 
+/* ------------------------------------------------------------------------------------------ */
+/* Wrapper for About Section */
+.about-wrapper {
+  padding: 2rem;
+  background: linear-gradient(to right, #f7f9fc, #e9f2f5);
+  text-align: center;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Header Styling */
+.about-wrapper h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #333;
+}
+
+
+/* Content Styles */
+.about {
+  max-width: 800px;
+  margin: 0 auto; /* Centers the content */
+  line-height: 1.8;
+  color: #555;
+  font-size: 1.1rem;
+  text-align: left; /* Adjust to keep the paragraphs aligned naturally */
+}
+
+.icon-who {
+  color: #008080; /* Teal for "Who I Am" */
+}
+
+.icon-journey {
+  color: #fa6e4e; /* Orange for "My Journey" */
+}
+
+.icon-interests {
+  color: #007acc; /* Purple for "My Interests" */
+}
+
+/* Paragraph Styling */
+.about p {
+  margin-bottom: 1.5rem;
+}
+
+/* Highlighting Key Points */
+.about p span {
+  font-weight: bold;
+  color: #007acc; /* A subtle blue to emphasize text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .about {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+}
+/* ------------------------------------------------------------------------------------------ */

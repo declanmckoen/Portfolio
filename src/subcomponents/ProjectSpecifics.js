@@ -12,7 +12,6 @@ const ProjectSpecifics = () => {
   if (!data || !data.projects) {
     return <p>Loading...</p>;
   }
-
   return (
     <p>{ project && project.about }</p>
   );
