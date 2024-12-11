@@ -13,7 +13,7 @@
         "Mongoose"
       ],
       "about": "NextGen Scholars is a website designed to help middle and high school students with access to college resources. The website allows the student to create their personalized profile and offers various activities within a four-year plan designed with the student in mind. Additionally, the student can use the site purely as an informational database about college prep, leveraging our numerous subpages located in the footer. As an added bonus for parents and educators, an educator profile is offered to allow adults to view their students' profiles. Website URL: nextgen-scholars.vercel.app",
-      "technical": "NextGen Scholars was created using HTML, CSS, EJS, and JavaScript in the frontend. In the backend, we employed backend JavaScript with Node.js and ExpressJS. ExpressJS facilitated the routing of our website with the server. As our database we used Mongodb with Mongoose. Most of these technologies were foreign to our group prior to this project, which meant we had to comb through pages of documentation on how to use them.",
+      "technical": "NextGen Scholars was created using HTML, CSS, EJS, and JavaScript in the frontend. In the backend, we employed backend JavaScript with Node.js and ExpressJS. ExpressJS facilitated the routing of our website with the server. As our database we used Mongodb with Mongoose. Most of these technologies were foreign to our group prior to this project, which meant we had to comb through pages of documentation on how to use them. We used Vercel to host this website since Vercel provides support for server-side routing.",
       "github": "https://github.com/declanmckoen/NextGen-Scholars",
       "pictures": [
         "/portfolio/pictures/nextgen-scholars/homepage.png",
@@ -79,7 +79,7 @@
         "React"
       ],
       "about": "This portfolio project has been my favorite project to create since it explicitly and implicitly reveals the skills in which I am adept. I am able to showcase my design-oriented mindset and my experience in full-stack development. Ultimately, I hope this project tells you, the reader, more about me as a person.",
-      "technical": "I decided to build my own portfolio website (the one you're in right now) from scratch using HTML, CSS, JavaScript, and React. Just prior to this project, I had little to no experience with frontend development at all. I spent long nights grinding through YouTube tutorials and online courses until I finally felt prepared enough to tackle this undertaking. Realistically, though, I still need a lot of improvement and am always looking for ways to enhance my abilities.",
+      "technical": "I decided to build my own portfolio website (the one you're in right now) from scratch using HTML, CSS, JavaScript, and React. Just prior to this project, I had little to no experience with frontend development at all. I spent long nights grinding through YouTube tutorials and online courses until I finally felt prepared enough to tackle this undertaking. This website is hosted using GitHub Pages.",
       "github": "https://github.com/declanmckoen/Sudoku",
       "pictures": [],
       "id": "portfolio"
