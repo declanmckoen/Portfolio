@@ -411,13 +411,19 @@ ul li:hover {
 
 
 /* ------------------------------------------------------------------------------------------ */
-.timeline-wrapper {
+.timeline-wrapper, .experience-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f0f0f0;
   font-family: Lato, sans-serif;
+}
+
+.timeline-wrapper h1, .experience-wrapper h1 {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid black;
 }
 
 /* Main vertical timeline */
@@ -504,6 +510,116 @@ ul li:hover {
 
   .timeline::before {
     left: 10px; /* Adjust vertical line in mobile for better responsiveness */
+  }
+}
+/* ------------------------------------------------------------------------------------------ */
+
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* General Wrapper Styles */
+.contact-wrapper {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-wrapper h1 {
+  font-size: 24px;
+  color: #007acc; /* Matches the blue tone from your preferred palette */
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.contact-wrapper p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Email and Phone Section */
+.email-phone-section {
+  margin-bottom: 30px;
+}
+
+.email-phone-section .phone,
+.email-phone-section .email {
+  font-size: 18px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-phone-section i {
+  margin-right: 10px;
+  color: #008080; /* Teal tone */
+  font-size: 1.5em;
+}
+
+/* LinkedIn Section */
+.linkedin-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.linkedin-section a i {
+  color: #0077b5; /* LinkedIn blue */
+  font-size: 2em;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.linkedin-section a i:hover {
+  color: #005983;
+  transform: scale(1.1);
+}
+
+/* Resume Section */
+.resume-section {
+  text-align: center;
+}
+
+.resume-section a i {
+  color: #008080; /* Teal tone */
+  font-size: 2em;
+  text-decoration: none;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.resume-section a i:hover {
+  color: #005952;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    padding: 15px;
+  }
+
+  .contact-wrapper h1 {
+    font-size: 20px;
+  }
+
+  .contact-wrapper p {
+    font-size: 14px;
+  }
+
+  .email-phone-section .phone,
+  .email-phone-section .email {
+    font-size: 16px;
+  }
+
+  .linkedin-section a,
+  .resume-section a {
+    font-size: 20px;
   }
 }
 /* ------------------------------------------------------------------------------------------ */
